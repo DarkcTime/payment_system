@@ -1,12 +1,15 @@
 {% extends 'index.html' %}
 {% block content %}
-<ul> 
-    <li>id: {{ item.id }}</li> 
-    <li>name: {{ item.name }}</li>
-    <li>description: {{ item.description }}
-    <li>price: {{ item.price }}</li>
-    <br/>
-    <button type='button'>Buy</button> 
-<ul>
+<form action="/buy/{{ item.id }}" method="POST">
+    {% csrf_token %}
+    <ul> 
+        <li>id: {{ item.id }}</li> 
+        <li>name: {{ item.str_name }}</li>
+        <li>description: {{ item.description }}
+        <li>price: {{ item.price }}</li>
+        <br/>
+        <button type='submit'>Buy</button> 
+    <ul>
+</form>
 {% endblock %} 
 
