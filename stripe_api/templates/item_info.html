@@ -4,9 +4,9 @@
     {% csrf_token %}
     <ul> 
         <li>id: {{ item.id }}</li> 
-        <li>name: {{ item.str_name }}</li>
+        <li>name: {{ item.name }}</li>
         <li>description: {{ item.description }}
-        <li>price: {{ item.price }}</li>
+        <li>price: {{ item.price }}$</li>
         <br/>
         <button type='submit'>Buy</button> 
     <ul>
