@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^zci2tetf#93(0h^ee@8p*k+r(v*r0p7s^8^-ni7@ia+(j(c&@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.ApiPaymentSystem.app']
 
 
 # Application definition
